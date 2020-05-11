@@ -1,0 +1,28 @@
+/* Game Styles */
+
+#wrapper-games {
+    text-align: center;
+
+    .col-md {
+  
+        display: flex;
+        flex-direction: column;
+    .games {
+        background-color: #eee;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        color: $secondary;
+    }
+
+    }
+    
+
+
+}
+

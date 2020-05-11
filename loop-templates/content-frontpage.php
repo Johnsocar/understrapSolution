@@ -1,6 +1,6 @@
 <?php
 /**
- * Single post partial template
+ * Partial template for content in page.php
  *
  * @package understrap
  */
@@ -10,18 +10,6 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<header class="entry-header">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-Single inte us_port
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
@@ -42,7 +30,7 @@ Single inte us_port
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
 	</footer><!-- .entry-footer -->
 

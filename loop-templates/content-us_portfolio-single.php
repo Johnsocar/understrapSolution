@@ -12,9 +12,9 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-
+oledoledoff
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-Single inte us_port
+
 		<div class="entry-meta">
 
 			<?php understrap_posted_on(); ?>
@@ -28,6 +28,15 @@ Single inte us_port
 	<div class="entry-content">
 
 		<?php the_content(); ?>
+
+		<?php 
+		$client = get_field('add_client');
+		// var_dump($client);
+		$client_url = get_field('client_url');
+		
+		?>
+
+		
 
 		<?php
 		wp_link_pages(
